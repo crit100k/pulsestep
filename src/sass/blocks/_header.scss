@@ -7,6 +7,9 @@
         @media (max-width: 991px) {
             width: 225px;
         }
+        @media (max-width: 575px) {
+            width: 150px;
+        }
         img {
             width: 100%;
         }
@@ -32,6 +35,9 @@
         font-size: 18px;
         margin-bottom: 8px;
         line-height: 18px;
+        @media (max-width: 575px) {
+            font-size: 13px;
+        }
     }
     &__contacts {
         display: flex;
