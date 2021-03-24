@@ -4,4 +4,13 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    &_left {
+        font-size: 36px;
+        text-align: left;
+        color: #fff;
+        line-height: 1.2;
+        @media (max-width: 575px) {
+           font-size: 22px;
+        }
+    }
 }
