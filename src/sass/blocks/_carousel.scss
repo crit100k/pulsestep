@@ -1,34 +1,68 @@
 .carousel {
     padding: 81px 0;
-
+    @media (max-width: 992px) {
+        padding: 51px 0;
+    }
     &__inner {
+        position: relative;
         width: 750px;
         margin: 0 auto;
-        
-    }
-
-    .comtrols {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        .arrow{
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            height: auto;
-            pointer-events: none;
-            z-index: 2;
-            position: absolute;
-            transform: translateY(-50%);
-            &-left {
-                left: -66px;
-            }
-            &right {
-                right: -66px;
+        @media (max-width: 992px) {
+            width: 550px ;
+        }
+        @media (max-width: 575px) {
+            width: 250px ;
+        }
+        div {
+            img {
+               width: 100%; 
             }
         }
     }
-  
+    .slick-prev, .slick-next  {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        img {
+            width: 31px;
+            height: 50px;
+            @media (max-width: 992px) {
+                height: 40px;
+            }
+        }
+    }
+    .slick-next  {
+        right: -66px;
+        left: auto;
+    }    
 }
-
-
+ 
+.dots-style {
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    }
+  
+  .dots-style button {
+    background: #070707;
+    opacity: 0.6;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    outline: none;
+    }
+  
+  .dots-style li.slick-active button {
+    background: $main_color;
+    opacity: 0.8;
+    }

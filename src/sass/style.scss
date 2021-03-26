@@ -5,6 +5,9 @@
     font-family: "Museo Sans Cyrl", sans-serif;
     margin: 0;
     box-sizing: border-box;
+    @media (max-width: 575px) {
+        outline: none;
+    }
 }
 
 a {
@@ -15,6 +18,10 @@ a {
     max-width: 950px;
     margin: 0 auto;
     position: relative;
+
+    @media (max-width: 1200px) {
+        max-width: 910px;
+    }
     @media (max-width: 991px) {
         max-width: 700px;
     }
@@ -34,6 +41,8 @@ a {
 @import "blocks/consultation";
 @import "blocks/forms";
 @import "blocks/carousel";
-
-
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/modal";
 

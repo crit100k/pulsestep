@@ -35,6 +35,9 @@
         font-size: 18px;
         margin-bottom: 8px;
         line-height: 18px;
+        &:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 575px) {
             font-size: 13px;
         }
